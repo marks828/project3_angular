@@ -135,13 +135,13 @@ angular
   }
   //initial ajax call to our api for yelp data
   function FoodFactory($resource){
-      return $resource("https://yelp-backend-rails.herokuapp.com/foods/:id", {}, {
+      return $resource("https://feedmerails.herokuapp.com/foods/:id", {}, {
         update: {method: "PUT"}
       })
     }
   //send yes information to visits table in our api
   function VisitFactory($resource){
-      return $resource("https://yelp-backend-rails.herokuapp.com/visits/:id", {}, {
+      return $resource("https://feedmerails.herokuapp.com/visits/:id", {}, {
         update: {method: "PUT"}
       })
     }
